@@ -40,6 +40,7 @@ if [[ $option == 2 ]]; then
  msfconsole
  elif [[ $start == n ]]; then
  bash metasploit.sh
+ fi
 elif [[ $option == 1 ]]; then
 echo " Starting Metasploit Framework "
 msfconsole
