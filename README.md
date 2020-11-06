@@ -1,2 +1,2 @@
 # nullH4CK3R
-OPTOINAL
+This tools is only for Termux
